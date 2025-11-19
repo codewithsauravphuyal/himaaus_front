@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* BRAND COLORS (LIGHT MODE) */
+    --primary: 202 100% 37%; /* #0072bc */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 42 100% 55%; /* #ffae00 */
+    --secondary-foreground: 0 0% 0%;
+
+    --tertiary: 0 0% 0%; /* #000000 */
+    --tertiary-foreground: 0 0% 100%;
+
+    --quaternary: 0 0% 46%; /* #757575 */
+    --quaternary-foreground: 0 0% 100%;
+
+    /* System Colors */
+    --background: 0 0% 100%;
+    --foreground: 222 84% 4%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 5% 40%;
+    --accent: 240 5% 96%;
+    --accent-foreground: 240 5% 20%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: var(--primary);
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* DARK MODE */
+    --background: 222 47% 11%;
+    --foreground: 0 0% 100%;
+
+    --primary: 202 100% 55%; 
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 42 100% 60%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 222 47% 15%;
+    --muted-foreground: 0 0% 80%;
+    --accent: 222 47% 15%;
+    --accent-foreground: 0 0% 98%;
+    --border: 215 27% 16%;
+    --input: 215 27% 16%;
+    --ring: var(--primary);
+  }
+}
