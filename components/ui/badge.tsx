@@ -3,6 +3,20 @@ import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
 
+const themeStyle = {
+  '--background': '#ffffff',
+  '--foreground': '#000000',
+  '--muted-foreground': '#757575',
+  '--primary': '#0072bc',
+  '--primary-foreground': '#ffffff',
+  '--secondary': '#ffae00',
+  '--secondary-foreground': '#000000',
+  '--border': '#757575',
+  '--destructive': '#0072bc',
+  '--destructive-foreground': '#ffffff',
+  '--ring': '#0072bc',
+} as React.CSSProperties
+
 const badgeVariants = cva(
   "inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
   {
@@ -29,7 +43,7 @@ export interface BadgeProps
 
 function Badge({ className, variant, ...props }: BadgeProps) {
   return (
-    <div className={cn(badgeVariants({ variant }), className)} {...props} />
+    <div style={themeStyle} className={cn(badgeVariants({ variant }), className)} {...props} />
   )
 }
 

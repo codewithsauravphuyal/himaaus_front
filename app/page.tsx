@@ -23,16 +23,6 @@ export default function HomePage() {
             </Button>
           </div>
         </div>
-        <Card className="border-primary/20">
-          <CardHeader>
-            <CardTitle>Why clients choose us</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-2 text-sm text-muted-foreground">
-            <p>• Proven track record in digital transformation</p>
-            <p>• Senior consultants with deep domain expertise</p>
-            <p>• Outcome-focused engagements</p>
-          </CardContent>
-        </Card>
       </section>
     </div>
   )
